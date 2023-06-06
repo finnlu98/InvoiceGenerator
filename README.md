@@ -6,12 +6,12 @@ I recently started free lancing in Bergen as a lighting technician. In order to 
 
 This app has therefore the MVP features for my needs and I will use it in the year to come.
 
-To summarize the app keeps track of my total profits, revenue, added taxes and total taxes. Furthermore I can store and edit hires I have done, and lastly I can create pdf invoices to send to my customers.
+To summarize the app keeps track of my total profits, revenue, added taxes and total taxes. Furthermore I can store and edit hires, and lastly I can create pdf invoices to send to my customers.
 
 The stack consists of:
-Frontend: React
-Backend API: Express and Node
-DB: MongoDB
+- Frontend: React
+- Backend API: Express and Node
+- DB: MongoDB
 
 There are still many features that can be added which would be fun to look at!
 
