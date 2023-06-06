@@ -1,5 +1,21 @@
 # Invoice generator for sole proprietorship (enkeltpersonforetak)
 
+# Purpose
+
+I recently started free lancing in Bergen as a lighting technician. In order to keep track of my expected costs related to tax and added taxes and I wanted to create something that could automaically track this while sending invoices to my customers.
+
+This app has therefore the MVP features for my needs and I will use it in the year to come.
+
+To summarize the app keeps track of my total profits, revenue, added taxes and total taxes. Furthermore I can store and edit hires I have done, and lastly I can create pdf invoices to send to my customers.
+
+The stack consists of:
+Frontend: React
+Backend API: Express and Node
+DB: MongoDB
+
+There are still many features that can be added which would be fun to look at!
+
+
 # Features 
 
 Current features:
@@ -17,6 +33,8 @@ Current features:
 ![Alt Text](/img/Faktura.PNG)
 
 Areas of improvement:
+- filter on year and date
+- Searhing in hires
 - Adding functionality checking if customer has paid - api with your bank
 - Sending emails from the react frontend
 - Adding multiple rows in invoice
