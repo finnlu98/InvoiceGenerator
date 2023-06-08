@@ -15,7 +15,7 @@ The stack consists of:
 
 There are still many features that can be added which would be fun to look at!
 
-This project took about 3-4 days to set up.
+This project took about 3-4 days to set up. The code could also use some refactoring to keep each component to follow single responsibility.
 
 
 # Features 
