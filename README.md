@@ -2,7 +2,7 @@
 
 # Purpose
 
-I recently started free lancing in Bergen as a lighting technician. In order to keep track of my expected costs related to tax and added taxes I wanted to create something that could automaically track this while sending invoices to my customers.
+I recently started free lancing in Bergen as a lighting technician. Since I don`t have an employer that pays taxes for me each month I must expect a larger tax collection in May. In order to keep track of my expected costs related to tax and added taxes I wanted to create something that could automaically track this while sending invoices to my customers.
 
 This app has therefore the MVP features for my needs and I will use it in the year to come.
 
