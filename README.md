@@ -2,9 +2,9 @@
 
 # Purpose
 
-I recently started free lancing in Bergen as a lighting technician. Since I don`t have an employer that pays taxes for me each month I must expect a larger tax collection in May. In order to keep track of my expected costs related to tax and added taxes I wanted to create something that could automaically track this while sending invoices to my customers.
+I recently started free lancing in Bergen as a lighting technician. Since I don`t have an employer that pays taxes for me each month I must expect a larger tax collection in May. In order to keep track of my expected costs related to tax and added taxes I wanted to create something that could automatically track this while sending invoices to my customers.
 
-This app has therefore the MVP features for my needs and I will use it in the year to come.
+The app is preety simple but it fit my needs and I have focused on creating the MVP that will save me time and calculate my expected taxes accurately. 
 
 To summarize the app keeps track of my total profits, revenue, added taxes and total taxes. Furthermore I can store and edit hires, and lastly I can create pdf invoices to send to my customers.
 
@@ -37,11 +37,12 @@ Current features:
 ## Areas of improvement:
 - Editing company information 
 - filter on year and date
-- Searhing in hires
+- Searching in hires
 - Adding functionality checking if customer has paid - api with your bank
 - Sending emails from the react frontend
 - Adding multiple rows in invoice
 - Exporting pdf as vector and not png format
+- User can change the expected taxrate (30% -> ?%)
 
 # In order to run app
 
