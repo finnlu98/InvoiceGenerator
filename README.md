@@ -9,11 +9,13 @@ This app has therefore the MVP features for my needs and I will use it in the ye
 To summarize the app keeps track of my total profits, revenue, added taxes and total taxes. Furthermore I can store and edit hires, and lastly I can create pdf invoices to send to my customers.
 
 The stack consists of:
-- Frontend: React
+- Frontend: React and Bootstrap
 - Backend API: Express and Node
 - DB: MongoDB
 
 There are still many features that can be added which would be fun to look at!
+
+This project took about 3-4 days to set up.
 
 
 # Features 
@@ -32,7 +34,7 @@ Current features:
 
 ![Alt Text](/img/Faktura.PNG)
 
-Areas of improvement:
+##Areas of improvement:
 - Editing company information 
 - filter on year and date
 - Searhing in hires
