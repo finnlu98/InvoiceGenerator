@@ -2,7 +2,7 @@
 
 # Purpose
 
-I recently started free lancing in Bergen as a lighting technician. In order to keep track of my expected costs related to tax and added taxes and I wanted to create something that could automaically track this while sending invoices to my customers.
+I recently started free lancing in Bergen as a lighting technician. In order to keep track of my expected costs related to tax and added taxes I wanted to create something that could automaically track this while sending invoices to my customers.
 
 This app has therefore the MVP features for my needs and I will use it in the year to come.
 
@@ -33,6 +33,7 @@ Current features:
 ![Alt Text](/img/Faktura.PNG)
 
 Areas of improvement:
+- Editing company information 
 - filter on year and date
 - Searhing in hires
 - Adding functionality checking if customer has paid - api with your bank
