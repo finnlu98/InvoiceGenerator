@@ -34,7 +34,7 @@ Current features:
 
 ![Alt Text](/img/Faktura.PNG)
 
-##Areas of improvement:
+## Areas of improvement:
 - Editing company information 
 - filter on year and date
 - Searhing in hires
