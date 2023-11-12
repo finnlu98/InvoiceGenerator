@@ -24,6 +24,12 @@ app.get('/sales/:id', (req, res) => {
 
 })
 
+app.get('/sales/year/:year', (req, res) => {
+    const year = req.params.year;
+    services.getSalesByYear(req, res, year)
+
+})
+
 app.post('/sales', (req, res) => {
     services.post(req, res)
     

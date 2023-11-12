@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 const Sale = require('./sale-model');
+const { error } = require('pdf-lib');
 
 mongoose.connect('mongodb://localhost:27017/invoicingDB', {
         useNewUrlParser: true,
@@ -35,6 +36,21 @@ function get(req, res) {
       // Send an error response
       res.status(500).json({ success: false, error: 'Failed to retrieve sales.' });
     });
+}
+
+
+function getSalesByYear(req, res, year) {
+  startDate = new Date(year, 0, 1)
+  endDate = new Date(year, 11, 31)
+  
+  Sale.find({deliveredDate:{$gte:startDate, $lt: endDate}})
+    .then(sales => {
+      const salesData = sales.map(sale => sale.toObject());
+      res.send({ success: true, data: salesData })
+    })
+    .catch(error => {
+      res.send({ success: false, error: 'Failed to retrieve sales.' })
+    })
 }
 
 
@@ -97,6 +113,6 @@ module.exports = {
     getSale:getSale,
     post:post,
     put:put,
-    del:del
-
+    del:del,
+    getSalesByYear:getSalesByYear
 }

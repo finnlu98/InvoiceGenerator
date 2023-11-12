@@ -13,7 +13,7 @@
 }
 
 .modal-container {
-    width: 30%;
+    width: 40%;
     height: 95%;    
     border-radius: 12px;
     background-color: white;
@@ -30,36 +30,39 @@
     padding: 10px;
 }
 
-  .title-close-btn {
-    display: flex;
-    justify-content: flex-end;
-    font-weight: bold;
-  }
-  
-  .title-close-btn button {
-    background-color: transparent;
-    border: none;
-    font-size: 25px;
-    cursor: pointer;
-  }
+.title-close-btn {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+}
 
-  .modal-container .footer {
-    flex: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .modal-container .footer button {
-    margin: 10px;
-    border: none;
-    background-color: dimgrey;
-    color: white;
-    border-radius: 8px;
-    font-size: 15px;
-    cursor: pointer;
-  }
-  
-  #cancelBtn {
-    background-color: crimson;
-  }
+.title-close-btn button {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+.modal-container .footer {
+  flex: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container .footer button {
+  margin: 10px;
+  border: none;
+  background-color: dimgrey;
+  color: white;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#cancelBtn {
+  background-color: crimson;
+}
+
+#updateBtn {
+  background-color: #018749;
+}

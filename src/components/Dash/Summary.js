@@ -24,7 +24,7 @@ function Summary({salesData}) {
     useEffect(() => {
         setTotalRev(salesData.reduce((total, item) => total + item.sumRow, 0))
         setTotalAddedTax(salesData.reduce((total, item) => total + item.sumTax, 0))
-        setTotalTax(0.3* totalRev)
+        setTotalTax(0.3* (totalRev-totalAddedTax))
         setTotalProf(totalRev-totalTax-totalAddedTax)
     })
 

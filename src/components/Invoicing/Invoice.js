@@ -115,7 +115,7 @@ function Invoice({saleData}) {
                   <p>Sum: {saleData.sumRow} NOK</p>
                 </div>
                 <div className='col-md-6'>
-                  <p>Kontonummer: 1404 98 34765</p>
+                  <p>Kontonummer: 1203 64 85505</p>
                 </div>
             
               </div>

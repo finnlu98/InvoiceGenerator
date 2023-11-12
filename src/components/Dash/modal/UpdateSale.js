@@ -118,8 +118,8 @@ function UpateSale({id, clicked, handleOnClick}) {
               </div>
               <CreateSaleInput saleData = {saleData} handleInputChange = {handleInputChange} handleTaxChange = {handleTaxChange}/>
               <div className="footer">
-                <button onClick={handleOnClick}>Cancel</button>
-                <button onClick={updateSale}>Update hire</button>
+                <button id="cancelBtn" onClick={handleOnClick}>Cancel</button>
+                <button id="updateBtn" onClick={updateSale}>Update hire</button>
               </div>
             </form>
           </div>

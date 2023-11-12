@@ -1,32 +1,37 @@
 import React from "react";
 import jsPDF from 'jspdf';
-import html2canvas from 'html2canvas';
+
 
 function PDFgenerator() {
 
-    const exportToPDF = () => {
-        const divWidthInMm = 210; // Width of the div in mm
-        const divHeightInMm = 297; // Height of the div in mm
-      
-        // Convert millimeters to points
-        
-        // Create a new jsPDF instance with A4 dimensions
-        const doc = new jsPDF('p', 'mm', 'a4');
-      
-        // Capture the div as an image using html2canvas
-        const element = document.getElementById('report');
-        html2canvas(element, { scale: 2 }).then((canvas) => {
-          const imgData = canvas.toDataURL('image/png');
-          const imgWidth = divWidthInMm;
-          const imgHeight = divHeightInMm;
-      
-          // Add the image to the PDF document
-          doc.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
-      
-          // Save the PDF file
-          doc.save('./output/output.pdf');
-        });
-      };
+      /**
+       * Note this function have found the correct dimensions by trial and error by tweaking width and windowwith
+       * This will not be a dynamic function that if you want to change the layout of the invoice
+       * Had problems finding a good solution
+       * It is however vectorized
+       */
+      const exportToPDF = () => {
+         
+        const report = new jsPDF({
+          orientation : "p",
+          unit: 'mm',
+          format: [210, 297]
+        } );
+
+        const elementHtml = document.querySelector('#report')
+
+        report.html(elementHtml, {
+          callback : (report) => {
+            report.save('output.pdf')
+          },
+          margin: [0, 0, 0, 0],
+          x : 0,
+          y : 0, 
+          width: 280,
+          windowWidth: 1060
+        })
+
+      }
     
     return (
         <div className="m-4">

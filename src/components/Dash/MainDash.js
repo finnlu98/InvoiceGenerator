@@ -9,15 +9,17 @@ function Requests() {
   const [salesData, setSalesData] = useState([]);
   const [clickedHiring, setClickedHiring] = useState(false)
   const [idClickedCard, setIdClickedCard] = useState("")
+  const [year, setYear] = useState(new Date().getFullYear())
   
 
   useEffect(() => {
-    requestData();
+    requestData(year);
     
   }, []);
 
-  const requestData = () => {
-    fetch('http://localhost:5000/sales')
+  const requestData = (year) => {
+    // Implement year in backend - to make this work!
+    fetch(`http://localhost:5000/sales`)
       .then(response => response.json())
       .then(data => {
         // Handle the response data
@@ -53,11 +55,17 @@ function Requests() {
     document.addEventListener("keydown", handleEscape, false);
   })
 
+  const handleSetYear = (e) => {
+    const { value } = e.target;
+    setYear(value)
+    requestData(value)
+  }
+
 
 
   return (
     <div className='container'>
-      <Header/>
+      <Header year={year} handleSetYear = {handleSetYear}/>
       <Summary salesData={salesData}/>
       <h2 className='mt-4'>Liste over oppdrag</h2>
       <hr></hr>

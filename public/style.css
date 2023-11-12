@@ -1,3 +1,17 @@
+
+.header-input-box {
+    font-size:25px;
+    text-align: center;
+}
+
+.header-input-box input {
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
 .input-inv {
     font-weight: bold;
     
@@ -16,6 +30,7 @@
     border: 1px solid black;
     
 }
+
 
 .invoice-pdf {
     margin: 0;
