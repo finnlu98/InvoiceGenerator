@@ -18,8 +18,8 @@ function Requests() {
   }, []);
 
   const requestData = (year) => {
-    // Implement year in backend - to make this work!
-    fetch(`http://localhost:5000/sales`)
+    
+    fetch(`http://localhost:5000/sales/year/${year}`)
       .then(response => response.json())
       .then(data => {
         // Handle the response data
